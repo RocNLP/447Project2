@@ -39,11 +39,22 @@ is a valid pattern graph.
 I've written up a basic libarary for the Trips Ontology from the previous project.  Details on how to use it are available
 in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  See instructions on how to install.  You are not required to use either.  Open issues for questions in the relevant repository.  Sophie will hold office hours regarding coding issues.
 
+## Report
+
+* How could you use patterns to extract information? Describe the procedure.  
+* What kind of facts can you extract? 
+* What kind of questions can you answer? 
+* What modifications would you have to make in order to answer simple questions?
+
 ## Submission
 
 Submit your final code as a jupyter notebook.  Your report can be included in the notebook.  
 Submit a zip file containing all the relevant project files.  Your report should contain a description of any design
-decisions you made and any issues you encountered.  Feel free to put additional non-notebook code in your submission if you want.  Just make sure to comment it well.
+decisions you made and any issues you encountered.  Feel free to put additional non-notebook code in your submission if you want, just make sure to comment it well.
 
 Additionally, include 3 pattern graphs, including one pattern with at least 2 levels of nesting (like the example above)
 and 3 sentences that each pattern should match (for a total of 3 patterns and 9 sentences)
+
+## Extra Credit
+
+Implement the modifications for information extraction and question answering.  Describe how your system works.  You should be able to pose a question as a collection of pattern graphs and use the matching results to answer your question.  Demonstrate a few questions/answer pairs.
