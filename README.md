@@ -34,11 +34,16 @@ Your code should be able to match nested structures of arbitrary depths, eg
 ```
 is a valid pattern graph.
 
+## Provided starter code
+
+I've written up a basic libarary for the Trips Ontology from the previous project.  Details on how to use it are available
+in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  See instructions on how to install.  You are not required to use either.  Open issues for questions in the relevant repository.  Sophie will hold office hours regarding coding issues.
+
 ## Submission
 
-This time, I'd like you to submit your final code as a jupyter notebook.  Your report can be included in the notebook.  
+Submit your final code as a jupyter notebook.  Your report can be included in the notebook.  
 Submit a zip file containing all the relevant project files.  Your report should contain a description of any design
-decisions you made and any issues you encountered.
+decisions you made and any issues you encountered.  Feel free to put additional non-notebook code in your submission if you want.  Just make sure to comment it well.
 
 Additionally, include 3 pattern graphs, including one pattern with at least 2 levels of nesting (like the example above)
 and 3 sentences that each pattern should match (for a total of 3 patterns and 9 sentences)
