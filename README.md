@@ -1,6 +1,6 @@
 # 447Project2
 
-**Due Friday, November 16th, 11:59 pm**
+**Due Sunday, November 18th, 11:59 pm**
 
 ## Description
 
