@@ -37,7 +37,7 @@ is a valid pattern graph.
 ## Provided starter code
 
 I've written up a basic libarary for the Trips Ontology from the previous project.  Details on how to use it are available
-in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  See instructions on how to install.  You are not required to use either if you don't want.  However, the `trips-web` tool should be useful for generating examples to work with.  Open issues for questions in the relevant repository.  Sophie will hold office hours regarding coding issues from 5-6pm on Wednesday and Thursday.
+in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  **Your code should be able to deal with target graphs in this format.**  See instructions on how to install.  You are not required to use either if you don't want.  However, the `trips-web` tool should be useful for generating examples to work with.  Open issues for questions in the relevant repository.  Sophie will hold office hours regarding coding issues from 5-6pm on Wednesday and Thursday.
 
 ## Report
 
@@ -48,9 +48,18 @@ in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-we
 
 ## Submission
 
-Submit your final code as a jupyter notebook.  Your report can be included in the notebook.  
+Submit your final code as a Jupyter notebook.  Your report can be included in the notebook.  
 Submit a zip file containing all the relevant project files.  Your report should contain a description of any design
 decisions you made and any issues you encountered.  Feel free to put additional non-notebook code in your submission if you want, just make sure to comment it well.
+
+The first cell of your Jupyter notebook should have clear instructions on how to load a file containing a pattern graph and a file containing a target graph
+
+eg
+
+```
+target_graph_file = "my_target_graph.json"
+pattern_graph_file= "my_pattern_graph.json"
+```
 
 Additionally, include 3 pattern graphs, including one pattern with at least 2 levels of nesting (like the example above)
 and 3 sentences that each pattern should match (for a total of 3 patterns and 9 sentences)
