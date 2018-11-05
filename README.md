@@ -62,7 +62,9 @@ pattern_graph_file= "my_pattern_graph.json"
 ```
 
 Additionally, include 3 pattern graphs, including one pattern with at least 2 levels of nesting (like the example above)
-and 3 sentences that each pattern should match (for a total of 3 patterns and 9 sentences)
+and 3 sentences that each pattern should match (for a total of 3 patterns and 9 sentences).
+
+If I cannot just unzip and run your notebook, I will ask you to come and demonstrate your system in my office.  Barring reasonable unforseen circumstances, this will incur a penalty of 10%.
 
 ## Extra Credit
 
