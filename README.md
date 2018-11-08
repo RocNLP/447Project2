@@ -24,17 +24,21 @@ The graphs are simplified versions of the full logical form, containing only typ
 ## Notes
 
 Your code should be able to match nested structures of arbitrary depths, eg
-```json
-{
-  "root": "WANT", 
-  "experiencer": "PERSON",
+```python
+pattern = {
+  "root": {"root": "WANT"}, 
+  "experiencer": {"root": "PERSON"},
   "formal": {
     "root": "CONSUME",
     "agent": "PERSON"
   }
 }
 ```
-is a valid pattern graph.
+is a valid pattern graph.  Note that we are using an extension of the `json` format for graphs from the last project for the patterns.  Each node is defined as a dictionary, with a guaranteed `"root"` element.  Any outgoing edges from a node are also included in the dictionary.  All the patterns we use here are trees.
+
+However, the target graphs will be in the trips-json format outputted by `trips-web`.  You should store the `trips-web` output to files first (eg, `trips-web "this is a test sentence" > examples/sentence1.json`) and load them in your code.
+
+Your code should take in a pattern graph and a target graph and output `true` or `false` based on whether the pattern matches or not.
 
 ## Provided starter code
 
@@ -74,4 +78,4 @@ If I cannot just unzip and run your notebook, I will ask you to come and demonst
 
 ## Extra Credit
 
-Implement the modifications for information extraction and question answering.  Describe how your system works.  You should be able to pose a question as a collection of pattern graphs and use the matching results to answer your question.  Demonstrate a few questions/answer pairs.
+Implement the modifications for information extraction and question answering.  Describe how your system works.  You should be able to pose a question as a collection of pattern graphs and use the matching results to answer your question.  Demonstrate a few questions/answer pairs.  Make sure you describe any changes you make to the input format sufficiently for me to create more examples.
