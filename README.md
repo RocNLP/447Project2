@@ -24,13 +24,15 @@ The graphs are simplified versions of the full logical form, containing only typ
 ## Notes
 
 Your code should be able to match nested structures of arbitrary depths, eg
-```
-[WANT 
-  :experiencer PERSON
-  :formal [CONSUME
-              :agent PERSON
-          ]
-]
+```json
+{
+  "root": "WANT" 
+  "experiencer": "PERSON"
+  "formal": {
+    "root": "CONSUME"
+    "agent": "PERSON"
+  }
+}
 ```
 is a valid pattern graph.
 
