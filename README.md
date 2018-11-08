@@ -37,7 +37,7 @@ is a valid pattern graph.
 ## Provided starter code
 
 I've written up a basic libarary for the Trips Ontology from the previous project.  Details on how to use it are available
-in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  You can install it via `pip install http://github.com/mrmechko/trips-web`.  Please report any problems with this code to me asap.  **Your code should be able to deal with target graphs in this format.**  See instructions on how to install.  You are not required to use the starter code if you don't want.  However, the `trips-web` tool should be useful for generating examples to work with.  Open issues for questions in the relevant repository.
+in  `demo.ipynb`.  Additionally, [this repo](http://github.com/mrmechko/trips-web) allows you to access the Step Web Parser and retrieve a json formatted version of the parse.  You can install it via `pip install git+git://github.com/mrmechko/trips-web`.  Please report any problems with this code to me asap.  **Your code should be able to deal with target graphs in this format.**  See instructions on how to install.  You are not required to use the starter code if you don't want.  However, the `trips-web` tool should be useful for generating examples to work with.  Open issues for questions in the relevant repository.
 
 Within reason, I will be happy to provide sample code demonstrating the basic functionality of the starter code and `trips-web` tool.
 
