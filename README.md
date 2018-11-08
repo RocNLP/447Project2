@@ -26,10 +26,10 @@ The graphs are simplified versions of the full logical form, containing only typ
 Your code should be able to match nested structures of arbitrary depths, eg
 ```json
 {
-  "root": "WANT" 
-  "experiencer": "PERSON"
+  "root": "WANT", 
+  "experiencer": "PERSON",
   "formal": {
-    "root": "CONSUME"
+    "root": "CONSUME",
     "agent": "PERSON"
   }
 }
