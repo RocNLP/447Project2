@@ -15,10 +15,10 @@ The graphs are simplified versions of the full logical form, containing only typ
 
 |pattern  |target   |result   |reason   |
 |---------|---------|---------|---------|
-|[APPLY-FORCE :agent ANIMAL] | [PUSH :agent PERSON :affected PHYS-OBJ] | success | PUSH < APPLY-FORCE |
-| |[PUSH :affected PHYS-OBJ :agent PERSON]| success | role order doesn't matter|
-| |[PUSH :affected PHYS-OBJ :agent PHYS-OBJECT]| fail | not (PHYS-OBJ < ANIMAL |
-| |[PUSH :affected PHYS-OBJ | fail | no "agent" role|
+|[APPLY-FORCE :agent ANIMAL] | [PUSH :agent PERSON :affected PHYS-OBJECT] | success | PUSH < APPLY-FORCE |
+| |[PUSH :affected PHYS-OBJECT :agent PERSON]| success | role order doesn't matter|
+| |[PUSH :affected PHYS-OBJECT :agent PHYS-OBJECT]| fail | not (PHYS-OBJ < ANIMAL |
+| |[PUSH :affected PHYS-OBJECT | fail | no "agent" role|
 | |[EVENT-OF-ACTION :agent ANIMAL] | fail | not (EVENT-OF-ACTION < APPLY-FORCE) |
 
 ## Notes
