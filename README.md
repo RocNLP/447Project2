@@ -26,11 +26,11 @@ The graphs are simplified versions of the full logical form, containing only typ
 Your code should be able to match nested structures of arbitrary depths, eg
 ```python
 pattern = {
-  "root": {"root": "WANT"}, 
+  "root": "WANT", 
   "experiencer": {"root": "PERSON"},
   "formal": {
     "root": "CONSUME",
-    "agent": "PERSON"
+    "agent": {"root": "PERSON"}
   }
 }
 ```
